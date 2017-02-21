@@ -50,7 +50,13 @@
 	<script src="<?php echo $import_js; ?>?v=<?php echo G_VERSION_BUILD; ?>" type="text/javascript"></script>
 	<?php } ?>
 	<?php } ?>
-
+	<script type="text/javascript">
+		$(function(){
+			$(".container .aw-question-detail .mod-head h1").css("font-weight", "bold");
+			$("body div.nav").hide();
+			$(".markitup-box img").removeAttr("style");    
+		});	
+        </script> 
 	<title><?php echo $this->page_title; ?></title>
 </head>
 <body class="<?php echo $this->body_class; ?>">
